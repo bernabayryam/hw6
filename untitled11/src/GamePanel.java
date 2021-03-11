@@ -38,6 +38,10 @@ public class GamePanel extends JPanel implements ActionListener {
         startGame();
     }
 
+    /**Start game
+     *
+     */
+
     public void startGame() {
         running = true;
         timer = new Timer(DELAY, this);
@@ -151,6 +155,12 @@ public class GamePanel extends JPanel implements ActionListener {
         }
     }
 
+
+
+    /**Win Message
+     *
+     * @param g
+     */
     public void Win(Graphics g) {
         g.setColor(Color.RED);
         g.setFont(new Font("YES",Font.BOLD, 80));
@@ -160,7 +170,10 @@ public class GamePanel extends JPanel implements ActionListener {
                 SCREEN_HEIGHT / 2);
     }
 
-
+    /**Game Over Message
+     *
+     * @param g
+     */
     public void gameOver(Graphics g) {
 
         g.setColor(Color.green);
